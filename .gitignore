@@ -1,0 +1,49 @@
+# Datos (crudos y procesados, suelen ser pesados o confidenciales)
+data/
+*.csv
+*.parquet
+*.xlsx
+!data/README.md
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Modelos serializados (pesados, mejor versionar aparte o con Git LFS)
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg
+
+# Entornos y variables sensibles
+.env
+.env.local
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
