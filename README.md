@@ -13,7 +13,7 @@ El objetivo es construir un modelo de clasificación capaz de identificar transa
 - Optimización de umbrales de decisión
 - Validación de estabilidad temporal (Prueba vs. OOT)
 - Selección de modelo final con criterio de negocio
-- (Próximo paso) Despliegue básico vía API
+- Despliegue básico vía API
 
 ## Estructura del repositorio
 
@@ -31,7 +31,7 @@ fraud-detection-project/
 └── README.md
 ```
 
-> Nota: los datos crudos no se incluyen en el repositorio por tamaño y/o confidencialidad. Ver sección [Datos](#-datos) para más detalles.
+> Nota: los datos crudos no se incluyen en el repositorio por tamaño. Ver sección [Datos](#-datos) para más detalles.
 
 ## Resultados y selección de modelo
 
@@ -78,14 +78,8 @@ Ejecutar en el orden: `data_cleaning` → modelos individuales.
 
 ## Datos
 
-Por razones de tamaño y/o confidencialidad, los datos crudos no están incluidos en este repositorio. Si deseas reproducir el proyecto, coloca tus archivos en la carpeta `data/` respetando el formato esperado (ver notebook de `data_cleaning`).
+Por razones de tamaño, los datos crudos no están incluidos en este repositorio. Si deseas reproducir el proyecto, coloca tus archivos en la carpeta `data/` respetando el formato esperado (ver notebook de `data_cleaning`).
 
-## Próximos pasos
-
-- Análisis de explicabilidad (SHAP) sobre el modelo final.
-- Empaquetado del pipeline completo (preprocesamiento + modelo).
-- Construcción de una API de inferencia (FastAPI).
-- Despliegue básico en Railway/Render.
 
 ## Tecnologías utilizadas
 
