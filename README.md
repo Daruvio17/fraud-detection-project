@@ -96,6 +96,6 @@ Por razones de tamaño y/o confidencialidad, los datos crudos no están incluido
 - matplotlib, seaborn
 - Jupyter Notebook
 
-## ✍️ Autor
+## Autor
 
-Proyecto desarrollado como parte de un portafolio de ciencia de datos enfocado en detección de fraude transaccional.
+Proyecto desarrollado como parte de un portafolio de ciencia de datos enfocado en detección de fraude transaccional por David Rubio.
