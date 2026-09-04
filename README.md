@@ -2,7 +2,7 @@
 
 Proyecto end-to-end de detección de fraude en transacciones, que cubre desde el análisis exploratorio de datos hasta la comparación de modelos y la preparación para despliegue en producción.
 
-## 📋 Descripción del proyecto
+## Descripción del proyecto
 
 El objetivo es construir un modelo de clasificación capaz de identificar transacciones fraudulentas en un contexto de **fuerte desbalance de clases** (~0.44% de fraude), priorizando buenas prácticas de validación (uso de una base **Out-Of-Time (OOT)** para medir estabilidad temporal) y un criterio de selección de modelos basado en el costo de negocio, no solo en métricas técnicas.
 
@@ -15,7 +15,7 @@ El objetivo es construir un modelo de clasificación capaz de identificar transa
 - Selección de modelo final con criterio de negocio
 - (Próximo paso) Despliegue básico vía API
 
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
 fraud-detection-project/
@@ -33,7 +33,7 @@ fraud-detection-project/
 
 > Nota: los datos crudos no se incluyen en el repositorio por tamaño y/o confidencialidad. Ver sección [Datos](#-datos) para más detalles.
 
-## 📊 Resultados y selección de modelo
+## Resultados y selección de modelo
 
 Se evaluaron 4 modelos, optimizando hiperparámetros y umbral de decisión para cada uno, y validando su desempeño tanto en una base de **Prueba** como en una base **OOT** (fuera de tiempo) para verificar estabilidad temporal.
 
@@ -57,7 +57,7 @@ Se seleccionó **XGBoost** como modelo final porque:
 
 Random Forest ofrece mejor precisión y F1, por lo que sería la alternativa preferida si el volumen de revisión manual fuera una restricción operativa más crítica que el fraude no detectado.
 
-## ⚙️ Instalación
+## Instalación
 
 ```bash
 git clone https://github.com/<tu-usuario>/fraud-detection-project.git
@@ -67,7 +67,7 @@ source venv/bin/activate   # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 🚀 Uso
+## Uso
 
 Cada carpeta contiene el notebook correspondiente a esa etapa del proyecto:
 
@@ -76,18 +76,18 @@ Cada carpeta contiene el notebook correspondiente a esa etapa del proyecto:
 
 Ejecutar en el orden: `data_cleaning` → modelos individuales.
 
-## 📁 Datos
+## Datos
 
 Por razones de tamaño y/o confidencialidad, los datos crudos no están incluidos en este repositorio. Si deseas reproducir el proyecto, coloca tus archivos en la carpeta `data/` respetando el formato esperado (ver notebook de `data_cleaning`).
 
-## 🔜 Próximos pasos
+## Próximos pasos
 
 - Análisis de explicabilidad (SHAP) sobre el modelo final.
 - Empaquetado del pipeline completo (preprocesamiento + modelo).
 - Construcción de una API de inferencia (FastAPI).
 - Despliegue básico en Railway/Render.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python 3.x
 - pandas, numpy
