@@ -37,13 +37,22 @@ fraud-detection-project/
 
 Se evaluaron 4 modelos, optimizando hiperparámetros y umbral de decisión para cada uno, y validando su desempeño tanto en una base de **Prueba** como en una base **OOT** (fuera de tiempo) para verificar estabilidad temporal.
 
-### Comparación en OOT (umbral óptimo por modelo)
+### Comparación en prueba 
 
-| Modelo         | Umbral | AUC-ROC | F2-score | Recall (fraude) | Precision (fraude) | F1 (fraude) |
-|----------------|--------|---------|----------|------------------|----------------------|-------------|
-| **XGBoost**    | 0.89   | 0.9932  | 0.6085   | 0.808            | 0.306                | 0.444       |
-| Random Forest  | —      | —       | —        | 0.713            | 0.376                | 0.492       |
-| LightGBM       | 0.90   | 0.9926  | 0.5925   | 0.799            | 0.291                | 0.427       |
+| Modelo         | Recall | Precision | F1 - score  |
+|----------------|--------|-----------|-------------|
+| **XGBoost**    | 0.808  | 0.306     | 0.444       | 
+| Random Forest  | 0.713  | 0.376     | 0.492       |
+| LightGBM       | 0.799  | 0.291     | 0.427       |
+
+
+### Comparación en OOT 
+
+| Modelo         | Recall | Precision | F1 - score  |
+|----------------|--------|-----------|-------------|
+| **XGBoost**    | 0.808  | 0.306     | 0.444       | 
+| Random Forest  | 0.713  | 0.376     | 0.492       |
+| LightGBM       | 0.799  | 0.291     | 0.427       |
 
 *(Logit fue descartado por bajo desempeño general frente a los modelos basados en árboles.)*
 
