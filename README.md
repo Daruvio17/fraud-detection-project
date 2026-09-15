@@ -1,4 +1,4 @@
-# Detección de Fraude Transaccional
+# **Detección de Fraude Transaccional**
 
 Proyecto end-to-end de detección de fraude en transacciones, que cubre desde el análisis exploratorio de datos hasta la comparación de modelos y la preparación para despliegue en producción.
 
