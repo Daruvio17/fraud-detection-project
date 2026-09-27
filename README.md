@@ -15,24 +15,6 @@ El objetivo es construir un modelo de clasificación capaz de identificar transa
 - Selección de modelo final con criterio de negocio
 - Despliegue básico vía API
 
-## Estructura del repositorio
-
-```
-fraud-detection-project/
-│
-├── data/                   # Datos crudos y procesados (no versionados en Git, ver .gitignore)
-├── data_cleaning/          # Notebooks/scripts de limpieza y EDA
-├── logit/                  # Entrenamiento y evaluación del modelo de regresión logística
-├── randomforest/           # Entrenamiento y evaluación de Random Forest
-├── xgboost/                # Entrenamiento y evaluación de XGBoost (modelo seleccionado)
-├── lightgbm/               # Entrenamiento y evaluación de LightGBM
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
-> Nota: los datos crudos no se incluyen en el repositorio por tamaño. Ver sección [Datos](#-datos) para más detalles.
-
 ## Resultados y selección de modelo
 
 Se evaluaron 4 modelos, optimizando hiperparámetros y umbral de decisión para cada uno, y validando su desempeño tanto en una base de **Prueba** como en una base **OOT** (fuera de tiempo) para verificar estabilidad temporal.
